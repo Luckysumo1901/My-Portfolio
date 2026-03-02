@@ -1,91 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>My Portfolio</title>
-    <link rel="icon" href="images/icon.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vennapusa Sumedha | Portfolio</title>
+<link rel="icon" href="images/icon.png">
+<link rel="stylesheet" href="css/style.css">
 
-    <link rel="stylesheet" href="css/style.css">
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#f4f6f9;
+    color:#333;
+}
+
+header{
+    background:#1e3a8a;
+    color:white;
+    padding:20px 0;
+    text-align:center;
+}
+
+nav{
+    background:#142c6e;
+    text-align:center;
+    padding:10px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+section{
+    padding:40px;
+}
+
+h2{
+    color:#1e3a8a;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    margin:20px 0;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+button{
+    background:#1e3a8a;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#142c6e;
+}
+
+footer{
+    background:#1e3a8a;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+</style>
 </head>
+
 <body>
 
-<header>
-    <h1><Var>VENNAPUSA SUMEDHA</Var></h1>
-    <p>B.Tech CSE (Data Science) | Aspiring Data Science Student</p>
-     <div class="social-links">
-        <a href="https://www.linkedin.com/in/YOUR-LINKEDIN-USERNAME" target="_blank">LinkedIn</a>
-        <a href="https://github.com/YOUR-GITHUB-USERNAME" target="_blank">GitHub</a>
+<header class="hero">
+    <div class="hero-content">
+        <img src="images/photo.jpg" alt="Vennapusa Sumedha" class="profile-img">
+        
+        <div>
+            <h1>Vennapusa Sumedha</h1>
+            <p>Data Science Student | AI & ML Enthusiast</p>
+        </div>
     </div>
 </header>
 
 <nav>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#skills">Skills</a>
-    <a href="#contact">Contact</a>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#experience">Experience</a>
+<a href="#contact">Contact</a>
 </nav>
 
-<section id="about" class="about">
-    <img src="images/photo.jpg" alt="Profile Picture">
-    <h2>About Me</h2>
-    <p>
-        I am a passionate Computer Science student specializing in Data Science.
-        I enjoy solving real-world problems using Machine Learning and Data Analysis.
-        Currently preparing for placements and building strong logical skills.
-    </p>
+<section id="about">
+<h2>About Me</h2>
+
+<p>
+I am a B.Tech Computer Science Engineering (Data Science) student (2023–2027) 
+with a CGPA of 8.73. I am passionate about Artificial Intelligence, Machine Learning, 
+and solving real-world problems using data.
+</p>
+
+<p>
+I am passionate about Artificial Intelligence, Machine Learning, 
+and Data Analytics. I enjoy building intelligent systems that 
+solve real-world problems.
+</p>
+
+<p>
+I have hands-on experience in Python, SQL, and Java, 
+and I have worked on a CNN–LSTM based crop disease 
+classification model achieving 0.983 average precision.
+</p>
+
+<p>
+My goal is to become a skilled Machine Learning Engineer 
+and contribute to innovative technology-driven solutions.
+</p>
 </section>
 
-<section id="projects" class="projects">
-    <h2>Projects</h2>
-
-    <div class="project-card">
-        <h3>Microclimate Monitoring and Disease Predictiom</h3>
-        <p>
-            Developed a multimodal deep learning framework integrating environmental time-series data and plant leaf images. Implemented CNN for spatial feature extraction and LSTM for sequential climate data modeling. Performed feature-level fusion before classification, resulting in enhanced prediction accuracy and robustness.
-        </p>
-    </div>
-
-    <div class="project-card">
-        <h3>Fruit Quality Detection</h3>
-        <p>
-            ML project to classify fruit quality using image processing.
-            Built using Python, OpenCV, and Scikit-learn.
-        </p>
-    </div>
-
-    <div class="project-card">
-        <h3>Sales Performance Analysis</h3>
-        <p>
-            Analyzed sales dataset using Pandas and Matplotlib.
-        </p>
-    </div>
+<section id="skills">
+<h2>Skills</h2>
+<div class="card">
+<p><strong>Programming:</strong> Python, Java, C</p>
+<p><strong>Databases:</strong> SQL, Oracle</p>
+<p><strong>Cloud:</strong> AWS Cloud Foundations, Google Cloud Data Analytics</p>
+<p><strong>Soft Skills:</strong> Leadership, Communication, Team Coordination</p>
+</div>
 </section>
 
-<section id="skills" class="skills">
-    <h2>Skills</h2>
-    <ul>
-        <li>Java</li>
-        <li>Python</li>
-        <li>C++</li>
-        <li>Machine Learning</li>
-        <li>SQL</li>
-        <li>HTML & CSS</li>
-    </ul>
+<section id="projects">
+<h2>Projects</h2>
+<div class="card">
+<h3>Crop Disease Classification (CNN–LSTM Model)</h3>
+<p>
+Developed a deep learning model combining CNN and LSTM 
+for crop disease detection using image and temporal features.
+</p>
+<p><strong>Achievement:</strong> Achieved 0.983 average precision.</p>
+</div>
+
+<div class="card">
+<h3>Sales Performance Analysis</h3>
+<p>
+Analyzed sales dataset using data cleaning and visualization techniques 
+to identify business trends and performance metrics.
+</p>
+<p><strong>Technologies Used:</strong> Python, Pandas, Matplotlib, SQL</p>
+</div>
+
 </section>
 
-<section id="contact" class="contact">
-    <h2>Contact Me</h2>
+<section id="experience">
+<h2>Experience</h2>
+<div class="card">
+<h3>Data Analytics Intern – Ceromind Innovations</h3>
+<p>Worked on data processing and analysis tasks.</p>
+</div>
 
-    <form id="contactForm">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea rows="5" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-    </form>
+<div class="card">
+<h3>AI/Data Science Intern - EDU Tantr</h3>
+<p>Assisted in AI model development and ML workflows.</p>
+</div>
 </section>
 
+<section id="contact">
+<h2>Contact</h2>
+<p>Email: sumedhavennapusa@gmail.com</p>
+<p>LinkedIn: 
+<a href="https://www.linkedin.com/in/sumedha-vennapusa-814196290" target="_blank">
+Click Here
+</a>
+</p>
+<br>
+<a href="assets/Vennapusa Sumedha - Resume.pdf" download>
+        <button>Download Resume</button>
+    </a>
+</section>
 <script src="js/script.js"></script>
-
 </body>
 </html>
